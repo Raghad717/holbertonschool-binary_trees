@@ -14,10 +14,10 @@
  */
 struct binary_tree_s
 {
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
+	int n;
+	struct binary_tree_s *parent;
+	struct binary_tree_s *left;
+	struct binary_tree_s *right;
 };
 
 /* Typedef for binary tree node */
@@ -31,6 +31,9 @@ typedef struct binary_tree_s avl_t;
 
 /* Max Binary Heap */
 typedef struct binary_tree_s heap_t;
+
+/* Function prototype for binary_tree_size */
+size_t binary_tree_size(const binary_tree_t *tree);
 
 /* Function prototype for binary_tree_depth */
 size_t binary_tree_depth(const binary_tree_t *tree);
