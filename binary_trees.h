@@ -32,11 +32,17 @@ typedef struct binary_tree_s avl_t;
 /* Max Binary Heap */
 typedef struct binary_tree_s heap_t;
 
+/* Function prototype for binary_tree_depth */
+size_t binary_tree_depth(const binary_tree_t *tree);
+
 /* Function prototype for binary_tree_inorder */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
 /* Helper function to create a new node (used in main) */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
+/* Function to insert right child */
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 
 /* Function to delete a tree */
 void binary_tree_delete(binary_tree_t *tree);
