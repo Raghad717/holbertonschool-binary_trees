@@ -32,29 +32,29 @@
 
 ## 📋 File Descriptions
 
-| File                     |Description                                                           | Time Complexity
-|------|-------------|
-| `binary_trees.h`         | Header file containing structure definitions and function prototypes | -
-| `0-binary_tree_node.c`   | Function to create a binary tree node                                | o(1)
-| `1-binary_tree_insert_left.c` | Function to insert a node as left-child                         | O(1)
-| `2-binary_tree_insert_right.c` | Function to insert a node as right-child                       | O(1)
-| `3-binary_tree_delete.c` | Function to delete an entire binary tree                             | O(n)
-| `4-binary_tree_is_leaf.c` | Function to check if a node is a leaf | O(1)
-| `5-binary_tree_is_root.c` | Function to check if a node is a root | O(1)
-| `6-binary_tree_preorder.c` | Function for pre-order traversal | O(n)
-| `7-binary_tree_inorder.c` | Function for in-order traversal | O(n)
-| `8-binary_tree_postorder.c` | Function for post-order traversal | O(n)
-| `9-binary_tree_height.c` | Function to measure height of a binary tree | O(n)
-| `10-binary_tree_depth.c` | Function to measure depth of a node | O(n)
-| `11-binary_tree_size.c` | Function to measure size of a binary tree | O(n)
-| `12-binary_tree_leaves.c` | Function to count leaves in a binary tree | O(n)
-| `13-binary_tree_nodes.c` | Function to count nodes with at least 1 child | O(n)
-| `14-binary_tree_balance.c` | Function to measure balance factor of a binary tree | O(n)
-| `15-binary_tree_is_full.c` | Function to check if a binary tree is full | O(n)
-| `16-binary_tree_is_perfect.c` | Function to check if a binary tree is perfect | O(n)
-| `17-binary_tree_sibling.c` | Function to find the sibling of a node | O(1)
-| `18-binary_tree_uncle.c` | Function to find the uncle of a node | O(1)
-| `README.md` | Project documentation |
+| File | Description | Time Complexity |
+|------|-------------|----------------|
+| `binary_trees.h` | Header file containing structure definitions and function prototypes | - |
+| `0-binary_tree_node.c` | Function to create a binary tree node | O(1) |
+| `1-binary_tree_insert_left.c` | Function to insert a node as left-child | O(1) |
+| `2-binary_tree_insert_right.c` | Function to insert a node as right-child | O(1) |
+| `3-binary_tree_delete.c` | Function to delete an entire binary tree | O(n) |
+| `4-binary_tree_is_leaf.c` | Function to check if a node is a leaf | O(1) |
+| `5-binary_tree_is_root.c` | Function to check if a node is a root | O(1) |
+| `6-binary_tree_preorder.c` | Function for pre-order traversal | O(n) |
+| `7-binary_tree_inorder.c` | Function for in-order traversal | O(n) |
+| `8-binary_tree_postorder.c` | Function for post-order traversal | O(n) |
+| `9-binary_tree_height.c` | Function to measure height of a binary tree | O(n) |
+| `10-binary_tree_depth.c` | Function to measure depth of a node | O(n) |
+| `11-binary_tree_size.c` | Function to measure size of a binary tree | O(n) |
+| `12-binary_tree_leaves.c` | Function to count leaves in a binary tree | O(n) |
+| `13-binary_tree_nodes.c` | Function to count nodes with at least 1 child | O(n) |
+| `14-binary_tree_balance.c` | Function to measure balance factor of a binary tree | O(n) |
+| `15-binary_tree_is_full.c` | Function to check if a binary tree is full | O(n) |
+| `16-binary_tree_is_perfect.c` | Function to check if a binary tree is perfect | O(n) |
+| `17-binary_tree_sibling.c` | Function to find the sibling of a node | O(1) |
+| `18-binary_tree_uncle.c` | Function to find the uncle of a node | O(1) |
+| `README.md` | Project documentation | - |
 ---
 
 ## Tasks Implementation
