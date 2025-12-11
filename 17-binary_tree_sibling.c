@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_sibling - Finds the sibling of a node
- * @node: Pointer to the node to find the sibling
+ * @node: Pointer to the node to find the sibling of
  *
  * Return: Pointer to the sibling node, or NULL if no sibling exists
  */
@@ -19,6 +19,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	if (node->parent->right == node)
 		return (node->parent->left);
 
-	/* Node is not a direct child of its parent (shouldn't happen in valid tree) */
+	/* Node is not a child of its parent (should not happen in valid tree) */
 	return (NULL);
 }
