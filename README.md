@@ -32,13 +32,13 @@
 
 ## 📋 File Descriptions
 
-| File | Description |Time Complexity
+| File                     |Description                                                           | Time Complexity
 |------|-------------|
-| `binary_trees.h` | Header file containing structure definitions and function prototypes | -
-| `0-binary_tree_node.c` | Function to create a binary tree node | o(1)
-| `1-binary_tree_insert_left.c` | Function to insert a node as left-child | O(1)
-| `2-binary_tree_insert_right.c` | Function to insert a node as right-child | O(1)
-| `3-binary_tree_delete.c` | Function to delete an entire binary tree | O(n)
+| `binary_trees.h`         | Header file containing structure definitions and function prototypes | -
+| `0-binary_tree_node.c`   | Function to create a binary tree node                                | o(1)
+| `1-binary_tree_insert_left.c` | Function to insert a node as left-child                         | O(1)
+| `2-binary_tree_insert_right.c` | Function to insert a node as right-child                       | O(1)
+| `3-binary_tree_delete.c` | Function to delete an entire binary tree                             | O(n)
 | `4-binary_tree_is_leaf.c` | Function to check if a node is a leaf | O(1)
 | `5-binary_tree_is_root.c` | Function to check if a node is a root | O(1)
 | `6-binary_tree_preorder.c` | Function for pre-order traversal | O(n)
