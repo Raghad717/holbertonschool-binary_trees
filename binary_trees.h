@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -14,49 +15,18 @@
  */
 struct binary_tree_s
 {
-	int n;
-	struct binary_tree_s *parent;
-	struct binary_tree_s *left;
-	struct binary_tree_s *right;
+    int n;
+    struct binary_tree_s *parent;
+    struct binary_tree_s *left;
+    struct binary_tree_s *right;
 };
 
-/* Typedef for binary tree node */
 typedef struct binary_tree_s binary_tree_t;
 
-/* Binary Search Tree */
-typedef struct binary_tree_s bst_t;
-
-/* AVL Tree */
-typedef struct binary_tree_s avl_t;
-
-/* Max Binary Heap */
-typedef struct binary_tree_s heap_t;
-
-/* Function prototype for binary_tree_leaves */
-size_t binary_tree_leaves(const binary_tree_t *tree);
-
-/* Function prototype for binary_tree_size */
-size_t binary_tree_size(const binary_tree_t *tree);
-
-/* Function prototype for binary_tree_depth */
-size_t binary_tree_depth(const binary_tree_t *tree);
-
-/* Function prototype for binary_tree_inorder */
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
-
-/* Helper function to create a new node (used in main) */
+/* Function prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-
-/* Function to insert right child */
-binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
-
-/* Function to delete a tree */
-void binary_tree_delete(binary_tree_t *tree);
-
-/* Function to check if a node is a leaf */
-int binary_tree_is_leaf(const binary_tree_t *node);
-
-/* Function to print binary tree (provided separately) */
 void binary_tree_print(const binary_tree_t *tree);
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+size_t binary_tree_nodes(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
