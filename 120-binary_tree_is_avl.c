@@ -34,7 +34,7 @@ if (diff > 1 || diff < -1)
 return (-1);
 
 /* Return height */
-return ((left_h > right_h ? left_h : right_h) + 1);
+return ((left_h > right_h ? left_h : right_h) +1);
 }
 
 /**
