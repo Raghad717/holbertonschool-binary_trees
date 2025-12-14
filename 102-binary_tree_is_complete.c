@@ -1,63 +1,69 @@
-
 #include "binary_trees.h"
 #include <stdlib.h>
 
 /**
-* binary_tree_is_complete - Checks if a binary tree is complete
-* @tree: Pointer to the root node of the tree to check
+* check_complete - Helper that verifies if a tree is complete
+* @tree: Pointer to the root node
+* @queue: Array used as a queue for level-order traversal
 *
-* Return: 1 if the tree is complete, 0 otherwise
-*         If tree is NULL, return 0
+* Return: 1 if tree is complete, 0 otherwise
 */
-int binary_tree_is_complete(const binary_tree_t *tree)
+static int check_complete(const binary_tree_t *tree,
+const binary_tree_t **queue)
 {
-const binary_tree_t **queue;
-int front = 0, rear = 0;
-int flag = 0;
-const binary_tree_t *current;
-
-if (tree == NULL)
-return (0);
-
-queue = malloc(sizeof(binary_tree_t *) * 1024);
-if (queue == NULL)
-return (0);
+int front = 0, rear = 0, flag = 0;
+const binary_tree_t *node;
 
 queue[rear++] = tree;
 
 while (front < rear)
 {
-current = queue[front++];
+node = queue[front++];
 
-if (current->left != NULL)
+if (node->left)
 {
 if (flag)
-{
-free(queue);
 return (0);
-}
-queue[rear++] = current->left;
+queue[rear++] = node->left;
 }
 else
+flag = 1;
+
+if (node->right)
 {
+if (flag)
+return (0);
+queue[rear++] = node->right;
+}
+else
 flag = 1;
 }
 
-if (current->right != NULL)
-{
-if (flag)
-{
-free(queue);
-return (0);
-}
-queue[rear++] = current->right;
-}
-else
-{
-flag = 1;
-}
-}
-
-free(queue);
 return (1);
 }
+
+/**
+* binary_tree_is_complete - Checks if a binary tree is complete
+* @tree: Pointer to the root node of the tree
+*
+* Return: 1 if complete, 0 otherwise
+*/
+int binary_tree_is_complete(const binary_tree_t *tree)
+{
+const binary_tree_t **queue;
+int capacity = 1024;
+int result;
+
+if (!tree)
+return (0);
+
+queue = malloc(sizeof(binary_tree_t *) * capacity);
+if (!queue)
+return (0);
+
+result = check_complete(tree, queue);
+
+free(queue);
+return (result);
+}
+
